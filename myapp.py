@@ -14,3 +14,15 @@ def helloworld():
         "Age ":age,
         "Location ":location
     })
+
+@app.route("/state")
+def current_state():
+    state = "Oyo"
+    capital = "Ibadan"
+    country = "Nigeria"
+    return jsonify({
+    "State": state,
+    "Capital":capital,
+    "Country":country
+
+    })
